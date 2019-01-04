@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div Mat-tab-group>
+  <nav Mat-tab-nav-bar>
+    
+   <!-- <a Mat-tab-link 
+    *ngFor = "let nav of navLinks;"
+    [routerLink]="nav.link"
+    routerLinkActive #rla="routerLinkActive" 
+    [routerLinkActiveOptions]="{exact: true}"
+    [active]="rla.isActive">{{nav.label}}</a>-->
+   
+   <a 
+    *ngFor = "let nav of navLinks;"
+    [routerLink]="nav.link"
+    routerLinkActive #rla="routerLinkActive" 
+    [routerLinkActiveOptions]="{exact: true}"
+ >{{nav.label}}</a>
+   
+   
+   
+   
+  </nav>
+  
+  <router-outlet></router-outlet>  
+</div>
